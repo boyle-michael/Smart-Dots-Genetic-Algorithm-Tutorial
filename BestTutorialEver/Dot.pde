@@ -62,6 +62,8 @@ class Dot {
         reachedGoal = true;
       } else if (pos.x< 600 && pos.y < 310 && pos.x > 0 && pos.y > 300) {//if hit obstacle
         dead = true;
+      } else if (pos.x< 800 && pos.y < 610 && pos.x > 200 && pos.y > 600) {//if hit obstacle
+        dead = true;
       }
     }
   }

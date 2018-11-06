@@ -4,13 +4,17 @@ PVector goal  = new PVector(400, 10);
 
 void setup() {
   size(800, 800); //size of the window
-  frameRate(100);//increase this to make the dots go faster
-  test = new Population(1000);//create a new population with 1000 members
+  frameRate(200);//increase this to make the dots go faster
+  test = new Population(10000);//create a new population with 1000 members
 }
 
 
 void draw() { 
   background(255);
+  
+  //display stats
+  text("Steps: " + test.dots[test.bestDot].brain.step, 10, 30);
+  text("Gen: " + test.gen, 10, 60);
 
   //draw goal
   fill(255, 0, 0);
@@ -20,6 +24,7 @@ void draw() {
   fill(0, 0, 255);
 
   rect(0, 300, 600, 10);
+  rect(200, 600, 600, 10);
 
 
   if (test.allDotsDead()) {
