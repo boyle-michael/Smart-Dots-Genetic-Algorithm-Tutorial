@@ -28,8 +28,8 @@ class Dot {
       fill(0, 255, 0);
       ellipse(pos.x, pos.y, 8, 8);
     } else {//all other dots are just smaller black dots
-      fill(0);
-      ellipse(pos.x, pos.y, 4, 4);
+      //fill(0);
+      //ellipse(pos.x, pos.y, 4, 4);
     }
   }
 
@@ -63,6 +63,14 @@ class Dot {
       } else if (pos.x< 600 && pos.y < 310 && pos.x > 0 && pos.y > 300) {//if hit obstacle
         dead = true;
       } else if (pos.x< 800 && pos.y < 610 && pos.x > 200 && pos.y > 600) {//if hit obstacle
+        dead = true;
+      } else if (pos.x< 600 && pos.y < 110 && pos.x > 0 && pos.y > 100) {//if hit obstacle
+        dead = true;
+      } else if (pos.x< 600 && pos.y < 510 && pos.x > 0 && pos.y > 500) {//if hit obstacle
+        dead = true;
+      } else if (pos.x< 800 && pos.y < 410 && pos.x > 200 && pos.y > 400) {//if hit obstacle
+        dead = true;
+      } else if (pos.x< 800 && pos.y < 210 && pos.x > 200 && pos.y > 200) {//if hit obstacle
         dead = true;
       }
     }

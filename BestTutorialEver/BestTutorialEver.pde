@@ -22,10 +22,12 @@ void draw() {
 
   //draw obstacle(s)
   fill(0, 0, 255);
-
+  rect(0, 100, 600, 10);
   rect(0, 300, 600, 10);
+  rect(0, 500, 600, 10);
   rect(200, 600, 600, 10);
-
+  rect(200, 400, 600, 10);
+  rect(200, 200, 600, 10);
 
   if (test.allDotsDead()) {
     //genetic algorithm
